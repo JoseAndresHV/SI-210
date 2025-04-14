@@ -6,7 +6,8 @@
 
 using namespace std;
 
-template <typename T> class Vector {
+template <typename T> 
+class Vector {
   protected:
     T *items;
     int size;
