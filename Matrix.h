@@ -1,10 +1,14 @@
+#ifndef MATRIX_H
+#define MATRIX_H
+
 #include <iostream>
 #include <stdexcept>
+
 using namespace std;
 
 template <typename T, int ROWS, int COLS>
 class Matrix {
-  private:
+  protected:
     T m[ROWS][COLS];
 
   public:
@@ -59,25 +63,4 @@ class Matrix {
     }
 };
 
-int main()
-{
-
-    Matrix<int, 3, 4> mat;
-
-    mat.print();
-
-    int value = 1;
-    for (int i = 0; i < mat.numRows(); i++)
-    {
-        for (int j = 0; j < mat.numCols(); j++)
-        {
-            mat.set(i, j, value++);
-        }
-    }
-
-    mat.print();
-
-    cout << mat.at(1, 2) << endl;
-
-    return 0;
-}
+#endif // MATRIX_H
