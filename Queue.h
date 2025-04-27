@@ -8,7 +8,7 @@ using namespace std;
 
 template<typename T>
 class Queue {
-private:
+protected:
     class Node {
     public:
         T data;
