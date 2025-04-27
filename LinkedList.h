@@ -95,17 +95,6 @@ public:
         }
         cout << "NULL" << endl;
     }
-
-    LinkedList<T> invert() {
-        LinkedList<T> result;
-        return result;
-    }
-
-    void sort() {
-    }
-
-    void removeValue(const T &value) {
-    }
 };
 
 #endif // LINKEDLIST_H
