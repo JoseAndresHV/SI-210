@@ -84,6 +84,13 @@ class Vector {
         }
         cout << endl;
     }
+
+    void clear() {
+        delete[] items;
+        capacity = 10;
+        items = new T[capacity];
+        size = 0;
+    }
 };
 
 #endif // VECTOR_H
